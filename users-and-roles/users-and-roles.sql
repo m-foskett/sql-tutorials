@@ -4,5 +4,5 @@ CREATE TABLE usersRoles (
   roleId INTEGER NOT NULL,
   FOREIGN KEY(userId) REFERENCES users(id),
   FOREIGN KEY(roleId) REFERENCES roles(id),
-  UNIQUE(userId,roleId)
+  PRIMARY KEY(userId,roleId)
 );
